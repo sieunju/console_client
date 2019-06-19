@@ -88,7 +88,7 @@ namespace JNET
 
         private void ConnectCompleted(object obj, SocketAsyncEventArgs evt)
         {
-            //쓰레드 제어연결할땐 다른 쓰레드 발동ㄴㄴ
+            //쓰레드 제어연결할땐 다른 쓰레드 발동ㄴㄴdd
             ThreadEvent.Set();
             Console.WriteLine("Connect Test {0}", ClientSocket.Connected);
             if (ClientSocket.Connected)
